@@ -41,19 +41,22 @@ das somas e subtrações
 		//Processamento dos dados
 		
 		limpa()
-		inteiro resultado = 0
+		inteiro resultado = 0,par = 0, impar = 0
 		para (x=0;x<10;x++)
 		{/*cria a variavel resultado, que desenvolve a soma dos números pares, e a subtração dos números 
 			ímpares e utiliza o mesmo laço para mostrar os participantes e seus números*/
 			se (numerosorteado[x] % 2 == 0)
-			{resultado = resultado + numerosorteado[x]}
+			{resultado = resultado + numerosorteado[x]
+			par++}
+			
 			senao
-			{resultado = resultado - numerosorteado[x]}
+			{resultado = resultado - numerosorteado[x]
+			impar++}
 			//SAÍDA
 			escreva("\nO participante ",participante[x]," Escolheu o número: ",numerosorteado[x],"\n")
 			
 		}
-		escreva("\nA soma dos números pares e a subtração dos números ímpares é igual a ",resultado)
+		escreva("\nA soma dos números pares e a subtração dos números ímpares é igual a ",resultado,"\nAlém disso, houveram ",par," números pares e ",impar," números ímpares")
 		
 		}
 			
@@ -64,7 +67,7 @@ das somas e subtrações
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1707; 
+ * @POSICAO-CURSOR = 1987; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
